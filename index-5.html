@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f4f1eb"><title>Creative QR — branded QR designer</title>
+<style>
+:root{--paper:#f4f1eb;--card:#fff;--ink:#171717;--muted:#77736c;--line:#e5e0d7;--accent:#6e5cf4;--accent-soft:#eeeaff;--good:#28734b;--warn:#a46714;--shadow:0 18px 60px rgba(35,30,20,.08)}*{box-sizing:border-box}html{background:var(--paper)}body{margin:0;color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}.topbar{height:74px;border-bottom:1px solid rgba(30,25,18,.08);display:flex;align-items:center;justify-content:space-between;padding:0 5vw}.brand{display:flex;gap:10px;align-items:center;color:inherit;text-decoration:none;font-weight:800;letter-spacing:-.03em}.brand-mark{display:grid;place-items:center;width:28px;height:28px;border:1px solid #cfc9bf;border-radius:9px;font-size:14px}.local-badge{font-size:12px;color:#6c6861;border:1px solid #ddd7cd;background:#faf8f4;border-radius:999px;padding:8px 12px}.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#3d9a68;margin-right:7px}.shell{max-width:1240px;margin:auto;padding:54px 28px 70px}.hero{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:38px}.eyebrow{font-size:11px;font-weight:800;letter-spacing:.16em;color:#817b72;margin:0 0 12px}.hero h1{font-size:clamp(40px,5vw,68px);line-height:.98;letter-spacing:-.055em;margin:0;max-width:760px}.hero h1 em{font-family:Georgia,serif;font-weight:500}.lede{max-width:690px;color:#706c65;font-size:17px;line-height:1.6;margin:20px 0 0}.hero-points{display:flex;flex-direction:column;gap:8px;white-space:nowrap;color:#7b766e;font-size:12px}.hero-points span:before{content:'✓';margin-right:7px;color:#3b8b61}.workspace{display:grid;grid-template-columns:minmax(360px,460px) minmax(0,1fr);gap:22px;align-items:start}.card{background:var(--card);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow)}.controls{padding:25px}.section-title{display:flex;justify-content:space-between;align-items:center;font-size:13px;font-weight:800;margin:0 0 12px}.section-title:not(:first-child){margin-top:25px}.tiny{font-size:10px;color:#aaa49a;font-weight:600}.field label,.eye-row label{display:block;font-size:11px;color:#777269;margin:0 0 7px;font-weight:700}.field textarea{width:100%;resize:vertical;border:1px solid var(--line);border-radius:14px;padding:13px 14px;font:14px/1.5 inherit;color:var(--ink);outline:none;background:#fcfbf8;min-height:86px}.field textarea:focus{border-color:#aaa1e9;box-shadow:0 0 0 3px var(--accent-soft)}.logo-upload{display:flex;align-items:center;gap:12px;border:1px dashed #d6d0c6;background:#fbfaf7;border-radius:16px;padding:14px;cursor:pointer;transition:.18s}.logo-upload:hover,.logo-upload.drag{border-color:#9e94ed;background:#f8f6ff}.upload-icon{width:38px;height:38px;border-radius:12px;background:#eeece7;display:grid;place-items:center;font-size:20px;color:#777269}.upload-copy{display:flex;flex-direction:column;gap:3px;flex:1}.upload-copy strong{font-size:13px}.upload-copy small{font-size:10px;color:#99938a}.mini-btn{border:1px solid #d8d2c8;background:#fff;border-radius:10px;padding:8px 11px;font:700 11px inherit;cursor:pointer}.logo-controls{padding:13px 2px 0}.logo-controls.disabled{display:none}.range-line{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;font-size:12px;color:#716d66}.range-line output{font-size:11px;color:#aaa}.range-line input{grid-column:1/-1;width:100%;accent-color:var(--accent)}.segmented{display:flex;gap:6px;margin:12px 0}.seg{flex:1;border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px;font:700 10px inherit;color:#777;cursor:pointer}.seg.active{border-color:#b6aef1;background:#f2efff;color:#5e50cf}.text-btn{border:0;background:none;padding:2px 0;color:#8d625c;font:700 11px inherit;cursor:pointer}.style-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.style-btn{border:1px solid var(--line);background:#fff;border-radius:13px;padding:11px 5px;display:flex;align-items:center;gap:7px;justify-content:center;flex-direction:column;font:700 10px inherit;color:#67635c;cursor:pointer}.style-btn.active{border-color:#b7aff0;background:#f5f2ff;color:#5548c8;box-shadow:inset 0 0 0 1px #b7aff0}.style-preview{display:block;width:30px;height:30px;position:relative;background:repeating-linear-gradient(90deg,#171717 0 4px,transparent 4px 7px);border-radius:8px}.circle-preview{border-radius:50%}.square-preview{border-radius:2px}.diamond-preview{transform:scale(.78) rotate(45deg);border-radius:3px}.eye-row{display:flex;align-items:center;justify-content:space-between;margin-top:13px}.eye-row select{border:1px solid var(--line);background:#fff;border-radius:9px;padding:8px 10px;font:11px inherit}.color-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.color-field{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line);border-radius:12px;padding:10px 11px;font-size:11px;color:#716d66}.color-field>span:last-child{display:flex;align-items:center;gap:7px}.color-field input{width:28px;height:28px;padding:0;border:0;background:none;cursor:pointer}.color-field code{font:600 10px ui-monospace,SFMono-Regular,Menlo,monospace;color:#555}.gradient-card{margin-top:9px;border:1px solid var(--line);border-radius:13px;padding:11px}.toggle-line{display:flex;gap:10px;align-items:center}.toggle-line strong{display:block;font-size:11px}.toggle-line small{display:block;color:#999;font-size:10px;margin-top:2px}.switch{position:relative;width:36px;height:21px;display:block}.switch input{display:none}.switch span{position:absolute;inset:0;border-radius:20px;background:#ddd}.switch span:after{content:'';position:absolute;width:15px;height:15px;top:3px;left:3px;background:white;border-radius:50%;transition:.15s;box-shadow:0 1px 3px #aaa}.switch input:checked+span{background:var(--accent)}.switch input:checked+span:after{transform:translateX(15px)}.gradient-colors{display:flex;gap:10px;padding-top:10px}.gradient-colors.disabled{opacity:.35;pointer-events:none}.gradient-colors label{flex:1;font-size:10px;color:#777}.gradient-colors input{display:block;margin-top:5px;width:100%;height:30px;border:0;padding:0}.check-line{display:flex;gap:8px;align-items:center;margin-top:12px;font-size:11px;color:#777}.check-line input{accent-color:var(--accent)}.preview-col{min-width:0}.preview-card{padding:18px}.preview-head{display:flex;align-items:center;justify-content:space-between;padding:2px 4px 14px}.preview-title{display:block;font-size:14px;font-weight:800}.preview-sub{display:block;font-size:10px;color:#aaa;margin-top:3px}.status{font-size:10px;border-radius:999px;padding:7px 9px;font-weight:800}.status.good{background:#eef8f1;color:var(--good)}.status.warn{background:#fff6e8;color:var(--warn)}.status.bad{background:#fff0ef;color:#a24f49}.preview{min-height:610px;border-radius:20px;background:linear-gradient(135deg,#faf9f6,#f0ede7);display:grid;place-items:center;overflow:hidden;padding:46px}.preview svg{width:min(100%,520px);height:auto;display:block;filter:drop-shadow(0 14px 24px rgba(20,18,12,.08))}.empty{color:#9b968d;font-size:13px}.preview-foot{display:flex;justify-content:space-between;padding:13px 4px 0;color:#aaa39a;font-size:10px}.download-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:13px}.download{height:50px;border:1px solid #d9d3ca;background:#fff;border-radius:14px;font:800 12px inherit;color:#3f3b35;cursor:pointer}.download.primary{background:#171717;color:#fff;border-color:#171717}.download:hover{transform:translateY(-1px)}.message{min-height:18px;color:#a24f49;font-size:11px;margin:10px 3px}.privacy-note{font-size:10px;color:#969088;text-align:center;margin-top:9px}.privacy-note span{color:#3d9a68;margin-right:5px}footer{text-align:center;color:#a19b92;font-size:10px;padding:0 0 28px}@media(max-width:900px){.hero{align-items:start;flex-direction:column}.hero-points{flex-direction:row;flex-wrap:wrap}.workspace{grid-template-columns:1fr}.preview{min-height:500px}}@media(max-width:560px){.shell{padding:32px 15px 50px}.topbar{padding:0 18px}.hero h1{font-size:42px}.controls{padding:18px;border-radius:20px}.style-grid{grid-template-columns:repeat(2,1fr)}.preview{min-height:390px;padding:22px}.download-row{grid-template-columns:1fr}.color-grid{grid-template-columns:1fr}.hero-points{font-size:10px}.preview-head{align-items:start;gap:10px}}
+
+</style>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#" aria-label="Creative QR home"><span class="brand-mark">✦</span><span>Creative QR</span></a><span class="local-badge"><span class="dot"></span> Local-only</span></header>
+<main class="shell">
+<section class="hero"><div><p class="eyebrow">BRANDED QR DESIGNER</p><h1>Make your QR look <em>like your brand.</em></h1><p class="lede">A polished QR code with your logo at the center, expressive modules, custom colors and print-ready exports.</p></div><div class="hero-points"><span>No upload to a server</span><span>No account</span><span>No QR API</span></div></section>
+<div class="workspace">
+<section class="controls card">
+  <div class="section-title"><span>1 · Content</span><span class="tiny" id="charCount">0 bytes</span></div>
+  <div class="field"><label for="content">URL or text</label><textarea id="content" rows="3" spellcheck="false">https://example.com/</textarea></div>
+
+  <div class="section-title"><span>2 · Your logo</span><span class="tiny">Optional</span></div>
+  <div class="logo-upload" id="logoDrop">
+    <input id="logoFile" type="file" accept="image/png,image/jpeg,image/webp,image/svg+xml" hidden>
+    <div class="upload-icon">＋</div><div class="upload-copy"><strong id="uploadTitle">Add your logo</strong><small id="uploadHint">PNG, JPG, WEBP or SVG · stays in your browser</small></div><button type="button" id="chooseLogo" class="mini-btn">Choose</button>
+  </div>
+  <div class="logo-controls disabled" id="logoControls">
+    <label class="range-line"><span>Logo size</span><output id="logoSizeOut">22%</output><input id="logoSize" type="range" min="14" max="30" value="22"></label>
+    <div class="segmented" role="group" aria-label="Logo shape"><button class="seg active" data-logo-shape="square">Rounded square</button><button class="seg" data-logo-shape="circle">Circle</button></div>
+    <button type="button" id="removeLogo" class="text-btn">Remove logo</button>
+  </div>
+
+  <div class="section-title"><span>3 · QR style</span><span class="tiny">Built for readability</span></div>
+  <div class="style-grid">
+    <button class="style-btn active" data-style="rounded"><span class="style-preview rounded-preview"></span><span>Rounded</span></button>
+    <button class="style-btn" data-style="circle"><span class="style-preview circle-preview"></span><span>Dots</span></button>
+    <button class="style-btn" data-style="square"><span class="style-preview square-preview"></span><span>Classic</span></button>
+    <button class="style-btn" data-style="diamond"><span class="style-preview diamond-preview"></span><span>Diamond</span></button>
+  </div>
+  <div class="eye-row"><label for="eyeStyle">Finder eyes</label><select id="eyeStyle"><option value="soft">Soft square</option><option value="classic">Classic</option><option value="circle">Circle</option></select></div>
+
+  <div class="section-title"><span>4 · Colors</span></div>
+  <div class="color-grid">
+    <label class="color-field"><span>QR color</span><span><input id="fg" type="color" value="#151515"><code id="fgHex">#151515</code></span></label>
+    <label class="color-field"><span>Background</span><span><input id="bg" type="color" value="#ffffff"><code id="bgHex">#FFFFFF</code></span></label>
+  </div>
+  <div class="gradient-card"><div class="toggle-line"><label class="switch"><input id="gradient" type="checkbox"><span></span></label><div><strong>Use a subtle gradient</strong><small>Keep contrast high for scanning</small></div></div><div id="gradientColors" class="gradient-colors disabled"><label>Start <input id="ga" type="color" value="#151515"></label><label>End <input id="gb" type="color" value="#725cff"></label></div></div>
+  <label class="check-line"><input id="transparent" type="checkbox"><span>Transparent background</span></label>
+</section>
+<section class="preview-col">
+  <div class="preview-card card"><div class="preview-head"><div><span class="preview-title">Your branded QR</span><span class="preview-sub">Logo centered · high error correction</span></div><span id="status" class="status good">✓ Scan-ready</span></div><div id="preview" class="preview"><div class="empty">Generating…</div></div><div class="preview-foot"><span>Generated locally in your browser</span><span id="versionInfo">—</span></div></div>
+  <div class="download-row"><button id="png" class="download primary">Download PNG <span>↗</span></button><button id="svg" class="download">Download SVG <span>↗</span></button></div>
+  <p id="message" class="message"></p>
+  <div class="privacy-note"><span>●</span> Your URL, text and logo never leave this page. Nothing is stored.</div>
+</section>
+</div>
+</main><footer>Creative QR · static, client-side by design</footer>
+<script>
+/*
+ * Creative QR — local QR encoder
+ *
+ * The matrix encoder is a compact browser port of the QR construction used by
+ * the Python `qrcode` project (MIT), with the RS block table derived from its
+ * published constants. No network requests are made by this file.
+ */
+(function(global) {
+  'use strict';
+  const RS_H = [[[1, 26, 9]], [[1, 44, 16]], [[2, 35, 13]], [[4, 25, 9]], [[2, 33, 11], [2, 34, 12]], [[4, 43, 15]], [[4, 39, 13], [1, 40, 14]], [[4, 40, 14], [2, 41, 15]], [[4, 36, 12], [4, 37, 13]], [[6, 43, 15], [2, 44, 16]], [[3, 36, 12], [8, 37, 13]], [[7, 42, 14], [4, 43, 15]], [[12, 33, 11], [4, 34, 12]], [[11, 36, 12], [5, 37, 13]], [[11, 36, 12], [7, 37, 13]], [[3, 45, 15], [13, 46, 16]], [[2, 42, 14], [17, 43, 15]], [[2, 42, 14], [19, 43, 15]], [[9, 39, 13], [16, 40, 14]], [[15, 43, 15], [10, 44, 16]], [[19, 46, 16], [6, 47, 17]], [[34, 37, 13]], [[16, 45, 15], [14, 46, 16]], [[30, 46, 16], [2, 47, 17]], [[22, 45, 15], [13, 46, 16]], [[33, 46, 16], [4, 47, 17]], [[12, 45, 15], [28, 46, 16]], [[11, 45, 15], [31, 46, 16]], [[19, 45, 15], [26, 46, 16]], [[23, 45, 15], [25, 46, 16]], [[23, 45, 15], [28, 46, 16]], [[19, 45, 15], [35, 46, 16]], [[11, 45, 15], [46, 46, 16]], [[59, 46, 16], [1, 47, 17]], [[22, 45, 15], [41, 46, 16]], [[2, 45, 15], [64, 46, 16]], [[24, 45, 15], [46, 46, 16]], [[42, 45, 15], [32, 46, 16]], [[10, 45, 15], [67, 46, 16]], [[20, 45, 15], [61, 46, 16]]];
+  const ALIGN = [[], [6, 18], [6, 22], [6, 26], [6, 30], [6, 34], [6, 22, 38], [6, 24, 42], [6, 26, 46], [6, 28, 50], [6, 30, 54], [6, 32, 58], [6, 34, 62], [6, 26, 46, 66], [6, 26, 48, 70], [6, 26, 50, 74], [6, 30, 54, 78], [6, 30, 56, 82], [6, 30, 58, 86], [6, 34, 62, 90], [6, 28, 50, 72, 94], [6, 26, 50, 74, 98], [6, 30, 54, 78, 102], [6, 28, 54, 80, 106], [6, 32, 58, 84, 110], [6, 30, 58, 86, 114], [6, 34, 62, 90, 118], [6, 26, 50, 74, 98, 122], [6, 30, 54, 78, 102, 126], [6, 26, 52, 78, 104, 130], [6, 30, 56, 82, 108, 134], [6, 34, 60, 86, 112, 138], [6, 30, 58, 86, 114, 142], [6, 34, 62, 90, 118, 146], [6, 30, 54, 78, 102, 126, 150], [6, 24, 50, 76, 102, 128, 154], [6, 28, 54, 80, 106, 132, 158], [6, 32, 58, 84, 110, 136, 162], [6, 26, 54, 82, 110, 138, 166], [6, 30, 58, 86, 114, 142, 170]];
+  const G15=(1<<10)|(1<<8)|(1<<5)|(1<<4)|(1<<2)|(1<<1)|1;
+  const G18=(1<<12)|(1<<11)|(1<<10)|(1<<9)|(1<<8)|(1<<5)|(1<<2)|1;
+  const G15_MASK=(1<<14)|(1<<12)|(1<<10)|(1<<4)|(1<<1);
+  const ECC_FORMAT=2; // QR H error correction format bits 10.
+
+  function bchDigit(x) { let n=0; while(x){n++;x>>>=1;} return n; }
+  function bchTypeInfo(data) { let d=data<<10; while(bchDigit(d)-bchDigit(G15)>=0) d ^= G15 << (bchDigit(d)-bchDigit(G15)); return ((data<<10)|d)^G15_MASK; }
+  function bchTypeNumber(data) { let d=data<<12; while(bchDigit(d)-bchDigit(G18)>=0) d ^= G18 << (bchDigit(d)-bchDigit(G18)); return (data<<12)|d; }
+  function maskFunc(p,i,j) {
+    if(p===0) return (i+j)%2===0; if(p===1) return i%2===0; if(p===2) return j%3===0;
+    if(p===3) return (i+j)%3===0; if(p===4) return (Math.floor(i/2)+Math.floor(j/3))%2===0;
+    if(p===5) return ((i*j)%2+(i*j)%3)===0; if(p===6) return (((i*j)%2+(i*j)%3)%2)===0;
+    return (((i*j)%3+(i+j)%2)%2)===0;
+  }
+  class Bits { constructor(){this.a=[];this.n=0;} put(v,n){for(let i=n-1;i>=0;i--)this.putBit(((v>>>i)&1)!==0);} putBit(bit){const k=this.n>>3;if(this.a.length<=k)this.a.push(0);if(bit)this.a[k]|=0x80>>(this.n&7);this.n++;} get(i){return ((this.a[i>>3]>>(7-(i&7)))&1)!==0;} }
+
+  function utf8(s) { const out=[]; for(const ch of s) { const cp=ch.codePointAt(0); if(cp<=0x7f) out.push(cp); else if(cp<=0x7ff) out.push(0xc0|(cp>>6),0x80|(cp&63)); else if(cp<=0xffff) out.push(0xe0|(cp>>12),0x80|((cp>>6)&63),0x80|(cp&63)); else out.push(0xf0|(cp>>18),0x80|((cp>>12)&63),0x80|((cp>>6)&63),0x80|(cp&63)); } return out; }
+  function gfMul(a,b) { let r=0; for(let i=0;i<8;i++){if(b&1)r^=a; const hi=a&0x80;a=(a<<1)&255;if(hi)a^=0x1d;b>>>=1;} return r; }
+  function rsGenerator(deg) { let g=[1]; for(let i=0;i<deg;i++){const root=(()=>{let x=1;for(let k=0;k<i;k++)x=gfMul(x,2);return x;})(); const ng=new Array(g.length+1).fill(0); for(let j=0;j<g.length;j++){ng[j]^=g[j];ng[j+1]^=gfMul(g[j],root);} g=ng;} return g.slice(1); }
+  const GEN=Array.from({length:31},(_,d)=>d?rsGenerator(d):[]);
+  function rsRemainder(data, ec) { const gen=GEN[ec], r=new Uint8Array(ec); for(const b of data){const f=b^r[0]; r.copyWithin(0,1);r[ec-1]=0;for(let j=0;j<ec;j++)r[j]^=gfMul(gen[j],f);} return Array.from(r); }
+
+  function blocksFor(v) { const e=RS_H[v-1], a=[]; for(const g of e) for(let i=0;i<g[0];i++) a.push({total:g[1],data:g[2]}); return a; }
+  function dataCodewords(bytes,v) {
+    const blocks=blocksFor(v), cap=blocks.reduce((s,b)=>s+b.data,0)*8;
+    const bits=new Bits(); bits.put(0x4,4); bits.put(bytes.length,v<10?8:16); for(const b of bytes)bits.put(b,8);
+    if(bits.n>cap) return null; for(let i=0;i<Math.min(4,cap-bits.n);i++)bits.putBit(false); while(bits.n%8)bits.putBit(false);
+    let pad=true; while(bits.n<cap){bits.put(pad?0xec:0x11,8);pad=!pad;}
+    const dc=[]; for(let off=0;off<bits.a.length;){ const count=blocks[dc.length]?.data; if(count===undefined)break; dc.push(bits.a.slice(off,off+count)); off+=count; }
+    // The slice above groups bytes in data-block order.
+    const ecs=[]; let off=0; for(const b of blocks){const d=bits.a.slice(off,off+b.data);off+=b.data;ecs.push(rsRemainder(d,b.total-b.data));}
+    const out=[]; const maxD=Math.max(...blocks.map(b=>b.data)), maxE=Math.max(...blocks.map(b=>b.total-b.data));
+    for(let i=0;i<maxD;i++)for(let k=0;k<dc.length;k++)if(i<dc[k].length)out.push(dc[k][i]);
+    for(let i=0;i<maxE;i++)for(let k=0;k<ecs.length;k++)if(i<ecs[k].length)out.push(ecs[k][i]);
+    return out;
+  }
+
+  function blank(v) { const n=17+4*v, m=Array.from({length:n},()=>Array(n).fill(null)); const fn=Array.from({length:n},()=>Array(n).fill(false));
+    const set=(x,y,val,id=true)=>{if(x>=0&&y>=0&&x<n&&y<n){m[y][x]=val;fn[y][x]=id;}};
+    const finder=(ox,oy)=>{for(let dy=-1;dy<=7;dy++)for(let dx=-1;dx<=7;dx++){let val=false;if(dx>=0&&dx<=6&&dy>=0&&dy<=6&&(dx===0||dx===6||dy===0||dy===6||(dx>=2&&dx<=4&&dy>=2&&dy<=4)))val=true;set(ox+dx,oy+dy,val);}};
+    finder(0,0);finder(n-7,0);finder(0,n-7);
+    const ac=ALIGN[v-1]||[]; for(const y of ac)for(const x of ac){if(m[y][x]!==null)continue;for(let dy=-2;dy<=2;dy++)for(let dx=-2;dx<=2;dx++)set(x+dx,y+dy,Math.max(Math.abs(dx),Math.abs(dy))===2||(dx===0&&dy===0));}
+    for(let i=8;i<n-8;i++){if(m[6][i]===null)set(i,6,i%2===0);if(m[i][6]===null)set(6,i,i%2===0);}
+    // reserve format/version info
+    for(let i=0;i<15;i++){ if(i<6)set(8,i,false);else if(i<8)set(8,i+1,false);else set(8,n-15+i,false); if(i<8)set(n-i-1,8,false);else if(i<9)set(15-i,8,false);else set(15-i-1,8,false); }
+    set(8,n-8,true);
+    if(v>=7){const bits=bchTypeNumber(v);for(let i=0;i<18;i++){const bit=((bits>>>i)&1)!==0;const a=Math.floor(i/3),b=i%3+n-8-3;set(b,a,bit);set(a,b,bit);}}
+    return {m,fn,n};
+  }
+  function drawFormat(m,fn,v,mask,test=false) { const n=17+4*v,bits=bchTypeInfo((ECC_FORMAT<<3)|mask);for(let i=0;i<15;i++){const bit=!test&&((bits>>>i)&1)!==0;if(i<6)m[i][8]=bit;else if(i<8)m[i+1][8]=bit;else m[n-15+i][8]=bit;if(i<8)m[8][n-i-1]=bit;else if(i<9)m[8][15-i]=bit;else m[8][15-i-1]=bit;fn[i<6?i:i<8?i+1:n-15+i][8]=true;fn[8][i<8?n-i-1:i<9?15-i:15-i-1]=true;} m[n-8][8]=!test;fn[n-8][8]=true; }
+  function mapData(m,fn,data,mask) { const n=m.length;let row=n-1,inc=-1,bi=7,by=0;for(let col=n-1;col>0;col-=2){if(col===6)col--;while(true){for(const c of [col,col-1])if(!fn[row][c]){let dark=by<data.length?((data[by]>>>bi)&1)!==0:false;if(maskFunc(mask,row,c))dark=!dark;m[row][c]=dark;bi--;if(bi<0){by++;bi=7;}}row+=inc;if(row<0||row>=n){row-=inc;inc=-inc;break;}}}}
+  function penalty(m) { const n=m.length;let p=0;for(let y=0;y<n;y++){let run=1;for(let x=1;x<n;x++){if(m[y][x]===m[y][x-1])run++;else{if(run>=5)p+=3+run-5;run=1;}}if(run>=5)p+=3+run-5;}for(let x=0;x<n;x++){let run=1;for(let y=1;y<n;y++){if(m[y][x]===m[y-1][x])run++;else{if(run>=5)p+=3+run-5;run=1;}}if(run>=5)p+=3+run-5;}for(let y=0;y<n-1;y++)for(let x=0;x<n-1;x++){const s=m[y][x]+m[y][x+1]+m[y+1][x]+m[y+1][x+1];if(s===0||s===4)p+=3;}
+    const pat=(a)=>a.join('')==='10111010000'||a.join('')==='00001011101';for(let y=0;y<n;y++)for(let x=0;x<=n-11;x++)if(pat(m[y].slice(x,x+11).map(Boolean)))p+=40;for(let x=0;x<n;x++)for(let y=0;y<=n-11;y++){let a=[];for(let k=0;k<11;k++)a.push(!!m[y+k][x]);if(pat(a))p+=40;}
+    let dark=0;for(const r of m)for(const b of r)if(b)dark++;p+=Math.floor(Math.abs(dark*100/(n*n)-50)/5)*10;return p;
+  }
+  function makeMatrix(bytes,v,mask,test=false){const q=blank(v);drawFormat(q.m,q.fn,v,mask,test);const data=dataCodewords(bytes,v);mapData(q.m,q.fn,data,mask);return q;}
+  function encode(text, minVersion=1) { const bytes=utf8(text);let version=Math.max(1,Math.min(40,minVersion));while(version<=40&&!dataCodewords(bytes,version))version++;if(version>40)throw new Error(`This content is ${bytes.length.toLocaleString()} bytes. A version 40 QR with high error correction can hold about ${blocksFor(40).reduce((s,b)=>s+b.data,0).toLocaleString()} bytes in this encoder. Try a shorter URL or text.`);let bestMask=0,bestP=Infinity;for(let mask=0;mask<8;mask++){const q=makeMatrix(bytes,version,mask,true);const p=penalty(q.m);if(p<bestP){bestP=p;bestMask=mask;}}const final=makeMatrix(bytes,version,bestMask,false);return {...final,version,mask:bestMask,bytes:bytes.length}; }
+  global.CreativeQR={encode,versionCapacity:(v)=>blocksFor(v).reduce((s,b)=>s+b.data,0)};
+})(window);
+
+</script>
+<script>
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const content=$('#content'),preview=$('#preview'),message=$('#message'),status=$('#status');
+const state={style:'rounded',eye:'soft',fg:'#151515',bg:'#ffffff',gradient:false,transparent:false,ga:'#151515',gb:'#725cff',logo:null,logoShape:'square',logoSize:22,qr:null,svg:''};
+let timer=0;
+
+function hexInput(id,key,out){$(id).addEventListener('input',e=>{state[key]=e.target.value;$(out).textContent=e.target.value.toUpperCase();render()})}
+hexInput('#fg','fg','#fgHex');hexInput('#bg','bg','#bgHex');
+$$('.style-btn').forEach(b=>b.addEventListener('click',()=>{state.style=b.dataset.style;$$('.style-btn').forEach(x=>x.classList.toggle('active',x===b));render()}));
+$$('.seg').forEach(b=>b.addEventListener('click',()=>{state.logoShape=b.dataset.logoShape;$$('.seg').forEach(x=>x.classList.toggle('active',x===b));render()}));
+$('#eyeStyle').addEventListener('change',e=>{state.eye=e.target.value;render()});
+$('#gradient').addEventListener('change',e=>{state.gradient=e.target.checked;$('#gradientColors').classList.toggle('disabled',!state.gradient);render()});
+$('#transparent').addEventListener('change',e=>{state.transparent=e.target.checked;render()});
+$('#ga').addEventListener('input',e=>{state.ga=e.target.value;render()});$('#gb').addEventListener('input',e=>{state.gb=e.target.value;render()});
+content.addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(render,90)});
+$('#logoSize').addEventListener('input',e=>{state.logoSize=+e.target.value;$('#logoSizeOut').textContent=`${state.logoSize}%`;render()});
+
+const drop=$('#logoDrop'),file=$('#logoFile');
+$('#chooseLogo').addEventListener('click',e=>{e.stopPropagation();file.click()});drop.addEventListener('click',e=>{if(e.target.id!=='chooseLogo')file.click()});
+['dragenter','dragover'].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.add('drag')}));['dragleave','drop'].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.remove('drag')}));
+drop.addEventListener('drop',e=>{const f=e.dataTransfer.files[0];if(f)loadLogo(f)});file.addEventListener('change',e=>{const f=e.target.files[0];if(f)loadLogo(f)});
+$('#removeLogo').addEventListener('click',()=>{state.logo=null;file.value='';$('#logoControls').classList.add('disabled');$('#uploadTitle').textContent='Add your logo';$('#uploadHint').textContent='PNG, JPG, WEBP or SVG · stays in your browser';render()});
+
+function loadLogo(f){if(!/^image\/(png|jpeg|webp|svg\+xml)$/.test(f.type)){message.textContent='Please choose a PNG, JPG, WEBP or SVG logo.';return}if(f.size>6*1024*1024){message.textContent='That logo is larger than 6 MB. Please choose a smaller file.';return}const r=new FileReader();r.onload=()=>{const img=new Image();img.onload=()=>{const max=1200,scale=Math.min(1,max/img.naturalWidth,max/img.naturalHeight),w=Math.max(1,Math.round(img.naturalWidth*scale)),h=Math.max(1,Math.round(img.naturalHeight*scale));const c=document.createElement('canvas');c.width=w;c.height=h;const x=c.getContext('2d');x.drawImage(img,0,0,w,h);state.logo=c.toDataURL('image/png');$('#logoControls').classList.remove('disabled');$('#uploadTitle').textContent=f.name;$('#uploadHint').textContent='Loaded locally · ready to style';render()};img.onerror=()=>{message.textContent='That logo could not be read. Try a PNG or JPG.'};img.src=r.result};r.readAsDataURL(f)}
+
+function modulePath(style,x,y,s){const cx=x+s/2,cy=y+s/2;if(style==='circle')return `<circle cx="${cx.toFixed(3)}" cy="${cy.toFixed(3)}" r="${(s*.42).toFixed(3)}"/>`;if(style==='diamond')return `<path d="M ${cx.toFixed(3)} ${y.toFixed(3)} L ${(x+s).toFixed(3)} ${cy.toFixed(3)} L ${cx.toFixed(3)} ${(y+s).toFixed(3)} L ${x.toFixed(3)} ${cy.toFixed(3)} Z"/>`;const r=style==='rounded'?s*.28:0;return `<rect x="${(x+s*.06).toFixed(3)}" y="${(y+s*.06).toFixed(3)}" width="${(s*.88).toFixed(3)}" height="${(s*.88).toFixed(3)}" rx="${r.toFixed(3)}"/>`}
+function eyeShape(x,y,s,style,fill,bg){if(style==='circle'){return `<circle cx="${x+3.5*s}" cy="${y+3.5*s}" r="3.5" fill="${fill}"/><circle cx="${x+3.5*s}" cy="${y+3.5*s}" r="2.05" fill="${bg}"/><circle cx="${x+3.5*s}" cy="${y+3.5*s}" r="1" fill="${fill}"/>`}
+const r=style==='soft'?'.75':'.15';return `<rect x="${x}" y="${y}" width="${7*s}" height="${7*s}" rx="${r*s}" fill="${fill}"/><rect x="${x+s}" y="${y+s}" width="${5*s}" height="${5*s}" rx="${r*s*.7}" fill="${bg}"/><rect x="${x+2*s}" y="${y+2*s}" width="${3*s}" height="${3*s}" rx="${r*s*.5}" fill="${fill}"/>`}
+function buildSvg(qr){const n=qr.n,qz=4,total=n+qz*2,fg=state.gradient?'url(#g)':state.fg,bg=state.bg;let s=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${total} ${total}" role="img" aria-label="Branded QR code">`;if(state.gradient)s+=`<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${state.ga}"/><stop offset="1" stop-color="${state.gb}"/></linearGradient></defs>`;if(!state.transparent)s+=`<rect width="${total}" height="${total}" fill="${bg}"/>`;s+=`<g fill="${fg}">`;
+for(let y=0;y<n;y++)for(let x=0;x<n;x++)if(qr.m[y][x] && !qr.fn[y][x])s+=modulePath(state.style,qz+x,qz+y,1);
+s+='</g>';
+s+=`<g>`+eyeShape(qz,qz,1,state.eye,fg,bg)+eyeShape(qz+n-7,qz,1,state.eye,fg,bg)+eyeShape(qz,qz+n-7,1,state.eye,fg,bg)+`</g>`;
+// Preserve protected QR areas (timing, alignment, format/version) exactly as encoded.
+s+=`<g fill="${fg}">`;for(let y=0;y<n;y++)for(let x=0;x<n;x++){if(!qr.fn[y][x]||!qr.m[y][x])continue;if((x<8&&y<8)||(x>=n-8&&y<8)||(x<8&&y>=n-8))continue;s+=`<rect x="${qz+x+.08}" y="${qz+y+.08}" width=".84" height=".84" rx=".1"/>`}s+='</g>';
+if(state.logo){const center=total/2,size=total*(state.logoSize/100),pad=size*.13,outer=size+pad*2;const x=center-outer/2,y=center-outer/2,r=state.logoShape==='circle'?outer/2:outer*.18;s+=`<g><rect x="${x.toFixed(3)}" y="${y.toFixed(3)}" width="${outer.toFixed(3)}" height="${outer.toFixed(3)}" rx="${r.toFixed(3)}" fill="${bg}"/>`;const ir=state.logoShape==='circle'?size/2:size*.14;s+=`<image href="${state.logo}" x="${(center-size/2).toFixed(3)}" y="${(center-size/2).toFixed(3)}" width="${size.toFixed(3)}" height="${size.toFixed(3)}" preserveAspectRatio="xMidYMid meet" clip-path="url(#logoClip)"/>`;s+=`<defs><clipPath id="logoClip"><rect x="${(center-size/2).toFixed(3)}" y="${(center-size/2).toFixed(3)}" width="${size.toFixed(3)}" height="${size.toFixed(3)}" rx="${ir.toFixed(3)}"/></clipPath></defs></g>`}
+s+='</svg>';return s}
+
+function contrastRatio(a,b){const lum=h=>{const c=h.slice(1).match(/../g).map(x=>parseInt(x,16)/255).map(v=>v<=.03928?v/12.92:Math.pow((v+.055)/1.055,2.4));return .2126*c[0]+.7152*c[1]+.0722*c[2]};const A=lum(a),B=lum(b);return (Math.max(A,B)+.05)/(Math.min(A,B)+.05)}
+async function validate(svg,text){if(!('BarcodeDetector' in window))return null;try{const d=new BarcodeDetector({formats:['qr_code']}),img=new Image(),u=URL.createObjectURL(new Blob([svg],{type:'image/svg+xml'}));await new Promise((res,rej)=>{img.onload=res;img.onerror=rej;img.src=u});const c=document.createElement('canvas');c.width=c.height=1400;const x=c.getContext('2d');if(!state.transparent){x.fillStyle=state.bg;x.fillRect(0,0,1400,1400)}x.drawImage(img,0,0,1400,1400);URL.revokeObjectURL(u);const hits=await d.detect(c);return hits.some(h=>h.rawValue===text)}catch{return null}}
+async function render(){message.textContent='';const value=content.value;const byteLen=new TextEncoder().encode(value).length; $('#charCount').textContent=`${byteLen.toLocaleString()} bytes`;if(!value.trim()){preview.innerHTML='<div class="empty">Enter a URL or text to begin.</div>';status.className='status warn';status.textContent='⚠ Empty input';return}try{const qr=CreativeQR.encode(value,1);state.qr=qr;state.svg=buildSvg(qr);preview.innerHTML=state.svg;$('#versionInfo').textContent=`V${qr.version} · H error correction`;if(!state.gradient&&contrastRatio(state.fg,state.bg)<4.5){status.className='status warn';status.textContent='⚠ Low contrast'}else{const v=await validate(state.svg,value);if(v===true){status.className='status good';status.textContent='✓ Scan-ready'}else if(v===false&&state.logoSize>24){status.className='status warn';status.textContent='⚠ Logo is large — reduce it'}else{status.className='status good';status.textContent='✓ Designed for scanning'}}}catch(e){state.qr=null;state.svg='';preview.innerHTML='<div class="empty">We could not fit this content into a QR code.</div>';status.className='status bad';status.textContent='⚠ QR generation failed';message.textContent=e.message||'Try a shorter URL or text.'}}
+function download(blob,name){const u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(u),700)}
+$('#svg').addEventListener('click',()=>{if(state.svg)download(new Blob([state.svg],{type:'image/svg+xml;charset=utf-8'}),`creative-qr-branded.svg`)});
+$('#png').addEventListener('click',()=>{if(!state.svg)return;const img=new Image(),u=URL.createObjectURL(new Blob([state.svg],{type:'image/svg+xml'}));img.onload=()=>{const c=document.createElement('canvas');c.width=c.height=2400;const x=c.getContext('2d');if(!state.transparent){x.fillStyle=state.bg;x.fillRect(0,0,2400,2400)}x.drawImage(img,0,0,2400,2400);c.toBlob(b=>{if(b)download(b,'creative-qr-branded.png');else message.textContent='PNG export failed.';URL.revokeObjectURL(u)},'image/png')};img.onerror=()=>{URL.revokeObjectURL(u);message.textContent='PNG export failed in this browser.'};img.src=u});
+$('#logoSizeOut').textContent='22%';render();
+
+</script>
+</body></html>
